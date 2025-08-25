@@ -38,7 +38,10 @@ html {
 body {
     width: 100%;
     height: 100%;
-    background: var(--bg-light);
+    /* background: url(/pexels-lazybird-1260727.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
 }
 
 header {
@@ -163,6 +166,7 @@ main {
     width: 100%;
     height: 100vh;
     display: flex;
+    /* background-color: #ffffff; */
 }
 
 .content1-left {
@@ -235,6 +239,12 @@ main {
 }
 
 .value-card:hover {
+    box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.75);
+}
+
+.value-card:hover {
     transition: 0.3s ease-in-out;
     transform: translateY(-5px);
 }
@@ -258,15 +268,124 @@ main {
     text-align: justify;
 }
 
+.trust,
+.respect,
+.solidarity,
+.responsibility {
+    color: var(--color-orange);
+}
+
+.trust:hover,
+.respect:hover,
+.solidarity:hover,
+.responsibility:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.trust:active,
+.respect:active,
+.solidarity:active,
+.responsibility:active {
+    color: red;
+}
 
 
-
-
-
+/* ---------content3-canteen-start----- */
 .content3 {
     width: 100%;
     height: 100vh;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+
+
 }
+
+.food {
+    display: flex;
+    justify-content: space-between;
+}
+
+.food-img {
+    width: 100%;
+    height: 100%;
+    background: url(/bbq-with-variety-meats-complete-with-tomatoes-bell-peppers-white-plate.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.fod-img {
+    width: 100%;
+    height: 100%;
+}
+
+.content3-text {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--color-orange);
+    font-weight: bold;
+
+
+}
+
+.food-table {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.schedule {
+    text-align: center;
+    font-size: 2rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    height: 30%;
+}
+
+
+th {
+    padding-bottom: 0.5rem;
+    color: var(--color-orange);
+    border-bottom: 2px solid black;
+}
+
+td {
+    border-bottom: 1px solid black;
+    padding: 1rem 2rem;
+}
+
+.orange:hover {
+    color: var(--color-orange);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* .ri-close-circle-fill,
+.ri-checkbox-circle-fill {
+    font-size: 1.5rem;
+} */
+
+.ri-close-circle-fill:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.ri-checkbox-circle-fill:hover {
+    color: green;
+    cursor: pointer;
+}
+
+.food-img {
+    width: 50px;
+    height: 50px;
+}
+
 
 .content4 {
     width: 100%;
